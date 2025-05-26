@@ -1,0 +1,78 @@
+{
+  "tests": [
+    {
+      "name": "Sample Test 1",
+      "setup": "",
+      "run": "echo '150 250' | ./main",
+      "input": "",
+      "output": "400\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "visibility": "visible"
+    },
+    {
+      "name": "Sample Test 2",
+      "setup": "",
+      "run": "echo '0 100' | ./main",
+      "input": "",
+      "output": "100\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "visibility": "visible"
+    },
+    {
+      "name": "Hidden Test 1",
+      "setup": "",
+      "run": "echo '10 20' | ./main",
+      "input": "",
+      "output": "30\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "visibility": "hidden"
+    },
+    {
+      "name": "Hidden Test 2",
+      "setup": "",
+      "run": "echo '-50 30' | ./main",
+      "input": "",
+      "output": "-20\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "visibility": "hidden"
+    },
+    {
+      "name": "Hidden Test 3",
+      "setup": "",
+      "run": "echo '1000 -1000' | ./main",
+      "input": "",
+      "output": "0\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "visibility": "hidden"
+    },
+    {
+      "name": "Hidden Test 4",
+      "setup": "",
+      "run": "echo '32767 1' | ./main",
+      "input": "",
+      "output": "32768\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "visibility": "hidden"
+    },
+    {
+      "name": "Hidden Test 5",
+      "setup": "",
+      "run": "echo '-2147483648 0' | ./main",
+      "input": "",
+      "output": "-2147483648\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "visibility": "hidden"
+    }
+  ],
+  "setup": {
+    "compiler": "gcc",
+    "compile": "gcc main.c -o main"
+  }
+}
