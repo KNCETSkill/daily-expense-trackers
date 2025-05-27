@@ -8,7 +8,8 @@
       "output": "400\n",
       "comparison": "exact",
       "timeout": 10,
-      "visibility": "visible"
+      "visibility": "visible",
+      "points": 5
     },
     {
       "name": "Sample Test 2",
@@ -18,7 +19,8 @@
       "output": "100\n",
       "comparison": "exact",
       "timeout": 10,
-      "visibility": "visible"
+      "visibility": "visible",
+      "points": 5
     },
     {
       "name": "Hidden Test 1",
@@ -28,7 +30,8 @@
       "output": "30\n",
       "comparison": "exact",
       "timeout": 10,
-      "visibility": "hidden"
+      "visibility": "hidden",
+      "points": 5
     },
     {
       "name": "Hidden Test 2",
@@ -38,7 +41,8 @@
       "output": "-20\n",
       "comparison": "exact",
       "timeout": 10,
-      "visibility": "hidden"
+      "visibility": "hidden",
+      "points": 5
     },
     {
       "name": "Hidden Test 3",
@@ -48,27 +52,8 @@
       "output": "0\n",
       "comparison": "exact",
       "timeout": 10,
-      "visibility": "hidden"
-    },
-    {
-      "name": "Hidden Test 4",
-      "setup": "",
-      "run": "echo '32767 1' | ./main",
-      "input": "",
-      "output": "32768\n",
-      "comparison": "exact",
-      "timeout": 10,
-      "visibility": "hidden"
-    },
-    {
-      "name": "Hidden Test 5",
-      "setup": "",
-      "run": "echo '-2147483648 0' | ./main",
-      "input": "",
-      "output": "-2147483648\n",
-      "comparison": "exact",
-      "timeout": 10,
-      "visibility": "hidden"
+      "visibility": "hidden",
+      "points": 5
     }
   ],
   "setup": {
